@@ -1,0 +1,48 @@
+on: push
+name: 🚀 Deploy website on push
+jobs:
+  build:
+    name: 🏭 Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v3
+      - name: Set Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      - name: Install dependencies
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+      - name: Run generate
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: generate
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: static-site
+          path: .output
+          retention-days: 2
+
+  web-deploy:
+    name: 🎉 Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+    - name: Download static site
+      uses: actions/download-artifact/@v3
+      with:
+        name: static-site
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.2
+      with:
+        local-dir: .output/public/
+        server: ftp.netim.hosting
+        server-dir: /public_www/
+        username: AK22009_github
+        password: ${{ secrets.ftp_password }}
+
+  
