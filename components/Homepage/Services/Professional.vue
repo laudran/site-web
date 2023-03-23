@@ -19,24 +19,6 @@
                             </v-card>
                         </v-col>
                     </v-row>
-                    <v-row align="center" no-gutters class="">
-                        <v-col cols="12" md="8" offset-md="2" class="text-center">
-                            <p class="text-h4 font-weight-bold professionalServicesReferenceTitle">ILS M'ONT FAIT
-                                CONFIANCE</p>
-                        </v-col>
-                    </v-row>
-                    <v-item-group selected-class="bg-primary" class="professionalServicesReferenceItems">
-                        <v-container>
-                            <v-row class="flex-child">
-                                <v-col v-for="(item, index) in references" :key="index">
-
-                                    <v-card class="d-flex align-center bg-primary" dark height="80">
-                                        <component :is="item"></component>
-                                    </v-card>
-                                </v-col>
-                            </v-row>
-                        </v-container>
-                    </v-item-group>
                 </v-card-text>
             </v-card>
         </v-col>

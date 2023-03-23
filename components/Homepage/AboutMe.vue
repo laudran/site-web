@@ -18,10 +18,6 @@
 
 <script setup lang="ts">
 
-    import { computed } from 'vue';
-    import { useDisplay } from 'vuetify/lib/framework.mjs';
-    import { ref } from 'vue'
-
     const aboutMeTexts = [
         "CyberCorsaire est une entreprise de cybersécurité créée en Guadeloupe, qui se spécialise dans la protection des entreprises et des particuliers contre les menaces en ligne telles que les attaques de piratage informatique, les vols de données et les intrusions malveillantes.",
         `Le nom "CyberCorsaire" est un clin d'œil à l'histoire des corsaires guadeloupéens, qui étaient des marins courageux et astucieux qui luttaient contre les pirates pour protéger leurs navires et leurs cargaisons. Tout comme les corsaires guadeloupéens, les cybercorsaires de cette entreprise sont des experts en sécurité informatique qui utilisent des technologies de pointe et des stratégies innovantes pour protéger leurs clients contre les pirates informatiques et autres menaces en ligne.`,
