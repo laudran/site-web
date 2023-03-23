@@ -38,7 +38,7 @@ jobs:
         name: static-site
         path: ${{ github.workspace }}/build
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.2
+      uses: SamKirkland/FTP-Deploy-Action@4.3.4
       with:
         local-dir: build/public/
         server: ftp.netim.hosting
