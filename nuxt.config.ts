@@ -39,6 +39,6 @@ export default defineNuxtConfig({
     },
     devServer: {
         host: 'cyber.localhost',
-        port: 3001
+        port: 3000
     }
 })
