@@ -3,7 +3,7 @@
         <v-container>
             <v-row align="center" justify="center">
                 <v-col cols="12" md="6" class="text-center font-weight-bold">
-                    <h4 class="text-h4">Me contacter</h4>
+                    <h4 class="text-h4">Nous contacter</h4>
                 </v-col>
             </v-row>
             <v-row align="center" justify="center">

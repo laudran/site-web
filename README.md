@@ -36,8 +36,6 @@ yarn dev
 
 This will let you display the app on your browser and will also hot reload on changes.
 
-
-
 ## Production
 
 Application is compiled automatically on github with github actions.

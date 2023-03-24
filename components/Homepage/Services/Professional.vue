@@ -14,7 +14,7 @@
                                     {{ item.title }}
                                 </v-card-text>
                                 <v-card-actions class="professionalServicesDescriptionTextNote">
-                                    Pour toute autre demande n'hésitez pas à me contacter.
+                                    Pour toute autre demande n'hésitez pas à nous contacter.
                                 </v-card-actions>
                             </v-card>
                         </v-col>
