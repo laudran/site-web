@@ -6,7 +6,7 @@
                 <v-btn @click="scrollToServices">Services</v-btn>
                 <v-btn @click="scrollToContact">Contact</v-btn>
                 <v-btn class="linkedinButton" size="small" icon target="_blank" data-type="LinkedIn" title="LinkedIn"
-                    href="https://www.linkedin.com/in/jeremy-benallal/">
+                    href="https://www.linkedin.com/company/cybercorsaire/">
                     <IconsLinkedinIcon />
                 </v-btn>
             </template>
@@ -17,7 +17,7 @@
         <v-footer elevation="5" class="text-center d-flex flex-column">
             <div>
                 <v-btn class="mx-2 linkedinButton" variant="text" rounded="xl" size="small" icon target="_blank"
-                    data-type="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/in/jeremy-benallal/">
+                    data-type="LinkedIn" title="LinkedIn" href="https://www.linkedin.com/company/cybercorsaire/">
                     <IconsLinkedinIcon />
                 </v-btn>
             </div>

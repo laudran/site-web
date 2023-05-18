@@ -29,8 +29,6 @@
     }
   })
 
-  console.log(bannerHeight.value, imgHeight.value);
-
 </script>
 
 <style lang="scss" scoped>
