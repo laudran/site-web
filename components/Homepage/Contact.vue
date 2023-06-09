@@ -7,7 +7,7 @@
                 </v-col>
             </v-row>
             <v-row align="center" justify="center">
-                <v-col cols="10" md="6">
+                <v-col cols="10" md="4">
                     <v-form ref="contactForm" v-model="valid" lazy-validation validate-on="blur">
                         <v-card>
                             <v-card-text>
@@ -48,6 +48,9 @@
                         </v-card>
                     </v-form>
                 </v-col>
+                <v-col cols="10" md="4">
+                    <CalendlyInlineWidget v-bind="calendlyOption" />
+                </v-col>
             </v-row>
         </v-container>
 
@@ -75,6 +78,9 @@
     const recaptcha = useState<ReCaptchaInstance | null>('recaptchaObject', () => null)
     const snackbar = useState<boolean>(() => false)
     const config = useRuntimeConfig()
+    const calendlyOption = {
+        url: 'https://calendly.com/cybercorsaire'
+    }
     const snackbarOptions = useState<SnackbarData>(() => ({
         color: 'red-darken-4',
         closeColor: 'white',

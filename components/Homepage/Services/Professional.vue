@@ -41,7 +41,7 @@
 
     const serviceList = [
         {
-            title: "Protégez votre entreprise avec nos services d'intégration d'outils de sécurité informatique. Nous offrons une gamme complète de solutions de sécurité, y compris l'antivirus, l'EDR, l'XDR, le bastion et le firewall, pour vous aider à prévenir les cyberattaques.",
+            title: "Protégez votre entreprise avec nos services d'intégration d'outils de sécurité informatique. Nous offrons une gamme complète de solutions de sécurité, y compris l'antivirus, l'EDR, l'XDR, le SIEM, le bastion et le firewall, pour vous aider à prévenir les cyberattaques.",
             id: 1
         },
         {

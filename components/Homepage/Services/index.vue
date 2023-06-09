@@ -1,21 +1,9 @@
 <template>
     <section class="sectionServices">
         <v-container fluid>
-            <v-tabs fixed-tabs v-model="serviceTab" color="white" class="sectionServicesTabs" slider-color="blue" grow>
-                <v-tab selected-class="sectionServicesTabsSelected" color="black" slider-color="blue" value="professional">
-                    Professionnels
-                </v-tab>
-                <v-tab selected-class="sectionServicesTabsSelected" color="black" slider-color="blue" value="individual">
-                    Particuliers
-                </v-tab>
-            </v-tabs>
-
             <v-window v-model="serviceTab">
                 <v-window-item value="professional">
                     <HomepageServicesProfessional />
-                </v-window-item>
-                <v-window-item value="individual">
-                    <HomepageServicesIndividual />
                 </v-window-item>
             </v-window>
         </v-container>
