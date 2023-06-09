@@ -8,47 +8,6 @@
             </v-row>
             <v-row align="center" justify="center">
                 <v-col cols="10" md="4">
-                    <v-form ref="contactForm" v-model="valid" lazy-validation validate-on="blur">
-                        <v-card>
-                            <v-card-text>
-                                <v-container>
-                                    <v-row align="center" justify="center">
-                                        <v-col cols="12" md="6">
-                                            <v-text-field v-model="contactRequest.firstName" :rules="firstNameRules"
-                                                label="Prénom" aria-label="Prénom" required></v-text-field>
-                                        </v-col>
-                                        <v-col cols="12" md="6">
-                                            <v-text-field v-model="contactRequest.lastName" :rules="lastNameRules"
-                                                label="Nom" aria-label="Nom" required></v-text-field>
-                                        </v-col>
-                                        <v-col cols="12" md="6">
-                                            <v-text-field v-model="contactRequest.email" :rules="emailRules" label="E-mail"
-                                                aria-label="Adresse email" required></v-text-field>
-                                        </v-col>
-                                        <v-col cols="12" md="6">
-                                            <v-text-field v-model="contactRequest.company" :rules="companyRules"
-                                                aria-label="Nom de société" label="Société"></v-text-field>
-                                        </v-col>
-                                        <v-col cols="12">
-                                            <v-textarea v-model="contactRequest.message" :rules="messageRules"
-                                                label="Message" aria-label="Contenu du message" required></v-textarea>
-                                        </v-col>
-                                        <input name="_formsubmit_id" :v-model="formsubmit_id" type="text"
-                                            style="display:none">
-                                    </v-row>
-                                </v-container>
-                            </v-card-text>
-                            <v-card-actions>
-                                <v-container>
-                                    <v-row align="end" justify="end">
-                                        <v-btn @click="checkRecaptcha">Envoyer</v-btn>
-                                    </v-row>
-                                </v-container>
-                            </v-card-actions>
-                        </v-card>
-                    </v-form>
-                </v-col>
-                <v-col cols="10" md="4">
                     <CalendlyInlineWidget v-bind="calendlyOption" />
                 </v-col>
             </v-row>
