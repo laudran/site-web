@@ -79,7 +79,7 @@
     const snackbar = useState<boolean>(() => false)
     const config = useRuntimeConfig()
     const calendlyOption = {
-        url: 'https://calendly.com/cybercorsaire'
+        url: 'https://calendly.com/d/2ng-zyn-kqx/presentation-de-nos-services-30minutes'
     }
     const snackbarOptions = useState<SnackbarData>(() => ({
         color: 'red-darken-4',
