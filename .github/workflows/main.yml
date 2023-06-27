@@ -29,10 +29,7 @@ jobs:
     name: 🎉 Deploy
     needs: build
     runs-on: ubuntu-latest
-    on:
-      push:
-        branches:
-          - main
+    if: github.ref == 'refs/heads/main'
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
